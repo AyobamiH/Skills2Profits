@@ -29,6 +29,7 @@
     "react-intersection-observer": "^9.13.0",
     "react-router-dom": "^6.26.0",
     "react-router-hash-link": "^2.4.3",
+    "serve": "^14.2.3",
     "session": "^0.1.0",
     "three": "^0.167.1"
   },
