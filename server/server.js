@@ -1,26 +1,23 @@
- // Load environment variables
+// server.js
+
 const express = require("express");
 const cors = require('cors');
 const app = express();
 const connectDB = require("./config/database");
 const messagesRoutes = require('./routes/messagesRoutes');
-// Middleware to parse JSON
 
 // Middleware to parse JSON
-
-
-
-// Enable CORS so that the frontend (https://skills2profits.com) can communicate with the backend (localhost:4545)
-app.use(cors({
-  origin: ['https://skills2profits.com'], 
-  methods: ['POST', 'GET'],
- 
-}))
-
 app.use(express.json());
 
-app.use('/api', messagesRoutes);
+// CORS Configuration
+app.use(cors({
+  origin: 'https://skills2profits.com',  // Your frontend domain
+  methods: ['POST', 'GET'],
+  credentials: true,  // Allow credentials (cookies, authorization headers, etc.)
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allow necessary headers
+}));
 
+app.use('/api', messagesRoutes);
 
 // Use the messages routes for the '/messages' path
 app.get('/', (req, res) => {
@@ -28,7 +25,6 @@ app.get('/', (req, res) => {
 });
 
 // Verify MongoDB URI
-
 connectDB();
 
 const PORT = process.env.PORT || 4545

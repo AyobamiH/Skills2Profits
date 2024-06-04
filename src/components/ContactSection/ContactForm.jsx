@@ -47,15 +47,15 @@ const ApplicationForm = () => {
     );
   };
 
-  axios.defaults.withCredentials = true;
+  
   const handleSubmit = async (e) => {
-    console.log(e.target)
-   
     e.preventDefault();
     if (isFormComplete()) {
       setIsLoading(true);
       try {
-        const response = await axios.post('https://skills2profits.onrender.com/api/send', formData);
+        const response = await axios.post('https://skills2profits.onrender.com/api/send', formData, {
+          withCredentials: true // Ensure this is explicitly set
+        });
         console.log('Message sent successfully', response.data);
         setFormData({
           name: "",
