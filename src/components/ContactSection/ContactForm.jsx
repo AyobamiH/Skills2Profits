@@ -82,7 +82,7 @@ const ApplicationForm = () => {
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
         <div className="bg-green-100 p-2 rounded-md  mb-8">
-          <p className="text-green-800"><span className="text-bold bg-green-950 text-white text-2xl">Hint:</span>Trading journal and analysis required later in the selection process.</p>
+          <p className="text-green-800"><span className="p-0 text-bold bg-green-950 text-white text-xl">Hint:</span>Trading journal and analysis required later in the selection process.</p>
         </div>
         
         {confirmationMessage && (
