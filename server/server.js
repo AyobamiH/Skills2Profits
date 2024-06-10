@@ -19,7 +19,7 @@ app.use(cors({
 
 app.use(express.json());
 
-app.use('/api/send', messagesRoutes);
+app.use('/api', messagesRoutes);
 
 
 // Use the messages routes for the '/messages' path
