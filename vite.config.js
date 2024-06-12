@@ -18,7 +18,7 @@ export default defineConfig({
     historyApiFallback: true, // Ensure client-side routing works
     proxy: {
       '/api': {
-        target: 'https://skills2profits.onrender.com/',  // Your backend server
+        target: 'https://skills2profits.onrender.com',  // Your backend server
         changeOrigin: true,
         secure: false,
       },
