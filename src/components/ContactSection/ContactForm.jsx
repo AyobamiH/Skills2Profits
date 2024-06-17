@@ -47,10 +47,12 @@ const ApplicationForm = () => {
 
 
   const handleSubmit = async (e) => {
+    console.log(e)
     e.preventDefault();
     if (isFormComplete()) {
       setIsLoading(true);
       try {
+        
         const response = await axios.post('/api/send', formData);
         console.log('Message sent successfully', response.data);
         setFormData({

@@ -9,14 +9,19 @@ const messagesRoutes = require('./routes/messagesRoutes');
 // Middleware to parse JSON
 app.use(express.json());
 
-const corsOptions = {
-  origin: 'skills2profits.com',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // Allow credentials like cookies to be sent
-  optionsSuccessStatus: 204
-};
+
 // Enable CORS so that the frontend (localhost:5174) can communicate with the backend (localhost:4545)
-app.use(cors(corsOptions))
+const corsOptions = {
+  origin: 'https://your-frontend-domain.vercel.app', // Your frontend domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true, // If you need to send cookies
+  optionsSuccessStatus: 204,
+};
+
+app.use(cors())
+
+app.use(cors(corsOptions));
+
 // Use the messages routes for the '/messages' path
 app.use('/api', messagesRoutes);
 
