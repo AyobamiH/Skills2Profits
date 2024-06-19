@@ -56,7 +56,7 @@ const DisplayMessages = () => {
         // Fetch messages from the backend API
         const fetchMessages = async () => {
             try {
-                const response = await axios.get('https://skills2profits.onrender.com/api/messages');
+                const response = await axios.get('/api/messages');
                 console.log('Response Data From Display Messages Components:', response.data);
                 setMessages(response.data); // Update state with fetched messages
             } catch (error) {

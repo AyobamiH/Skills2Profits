@@ -33,7 +33,7 @@ exports.getMessages = async (req, res) => {
         
         // Send the messages as a JSON response
         console.log('Messages from the MongoDb: ',  messages)
-        res.status(200).json(messages);
+        res.json(messages);
     } catch (error) {
         // If there's an error, log it and send a 500 status with an error message
         console.error('Error retrieving messages:', error);
