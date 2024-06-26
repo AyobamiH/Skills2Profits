@@ -9,7 +9,7 @@ const ContactSection = () => {
     <section id="contact" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-[#001f3f] mb-12">
-          Show Interest
+           Show Interest by Contacting Us
         </h2>
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">

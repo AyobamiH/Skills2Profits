@@ -51,7 +51,7 @@ const ApplicationForm = () => {
     if (isFormComplete()) {
       setIsLoading(true);
       try {
-        const response = await axios.post('https://skills2profits.onrender.com/api/send', formData);
+        const response = await axios.post('/api/send', formData);
         console.log('Message sent successfully', response.data);
         setFormData({
           name: "",
