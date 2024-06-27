@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 pt-8 border-t border-[#34495e] text-center">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Developed by Custom Website Designs Northampton, Northamptonshire, UK.
+            &copy; {new Date().getFullYear()} Skills2Profits. All rights reserved.
           </p>
         </div>
       </div>
