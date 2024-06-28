@@ -5,7 +5,7 @@ import Logo from "./Logo";
 import Navigation from "./Navigation";
 import CTAButton from "../common/CTAButton";
 import { HashLink as Link } from 'react-router-hash-link';
-const Header = ( {onApplyNowClick} ) => {
+const Header = ( {onApplyNowClick,  handleContactClick} ) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -86,7 +86,7 @@ const Header = ( {onApplyNowClick} ) => {
             transition={{ duration: 0.3 }}
           >
             <Navigation />
-            <Link  smooth to='/#contact'>
+            <Link smooth  to='/#contact'>
               <CTAButton onClick={onApplyNowClick}> Start Profiting</CTAButton>
             </Link>
           
