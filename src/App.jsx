@@ -18,11 +18,18 @@ import MessagesPage from './components/MessagesPage';
 
 const App = () => {
   const [showApplicationForm, setShowApplicationForm] = useState(false);
+  const [showContactForm, setShowContactForm] = useState(false);
 
   const handleApplyNowClick = () => {
     setShowApplicationForm(true);
     console.log('clicked');
   };
+
+  const handleContactClick = () =>{
+    setShowContactForm(true);
+    console.log('contact form clicked)');
+  }
+
 
   useEffect(() => {
     if (showApplicationForm) {
@@ -36,7 +43,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div id='home' className="relative overflow-hidden">
-        <Header onApplyNowClick={handleApplyNowClick} />
+        <Header onApplyNowClick={handleApplyNowClick} handleContactClick={handleContactClick} />
 
         <Routes>
           <Route path="/" element={
@@ -96,7 +103,7 @@ const App = () => {
               </ScrollAnimationSection>
 
               {/* Conditional Rendering of Application or Contact Section */}
-              {showApplicationForm ? <ApplicationSection /> : <ContactSection />}
+              {showContactForm ? < ApplicationSection/> : <ContactSection />}
             </>
           } />
           <Route path="/contact" element={ <ContactSection /> } />
