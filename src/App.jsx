@@ -1,5 +1,5 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import WhatIsOnOffer from './components/WhatIsOnOffer/WhatIsOnOffer';
@@ -11,6 +11,9 @@ import HeroSection from './components/HeroSection/HeroSection';
 import ServicesSection from './components/ServicesSection/ServicesSection';
 import ApplicationSection from './components/ApplicationSection/ApplicationSection';
 import ScrollAnimationSection from './components/ScrollAnimationSection';
+import Layout from './components/Layouts/Layout'
+// import CTAButton from './components/CTAButton'; // Import your CTAButton
+import MessagesPage from './components/MessagesPage';
 
 
 function App() {
@@ -21,71 +24,96 @@ function App() {
     console.log('clicked');
   };
 
+  useEffect(() => {
+    if (showApplicationForm) {
+      const element = document.getElementById('showInterest');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [showApplicationForm]);
+
   return (
-    <div className="relative overflow-hidden">
-     
+    <BrowserRouter>
+      <div id='home' className="relative overflow-hidden">
+        <Header onApplyNowClick={handleApplyNowClick} />
 
-      <Header onApplyNowClick={handleApplyNowClick} />
+        <Routes>
+          <Route path="/" element={
+            <>
+              {/* Hero Section */}
+              <ScrollAnimationSection
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <HeroSection onApplyNowClick={handleApplyNowClick} />
+              </ScrollAnimationSection>
 
-      {/* Hero Section */}
-      <ScrollAnimationSection
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <HeroSection onApplyNowClick={handleApplyNowClick} />
-      </ScrollAnimationSection>
+              {/* Services Section */}
+              <ScrollAnimationSection
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                <ServicesSection />
+              </ScrollAnimationSection>
 
-      {/* Services Section */}
-      <ScrollAnimationSection
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <ServicesSection />
-      </ScrollAnimationSection>
+              {/* About Section */}
+              <ScrollAnimationSection
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >
+                <AboutSection />
+              </ScrollAnimationSection>
 
-      {/* About Section */}
-      <ScrollAnimationSection
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-      >
-        <AboutSection />
-      </ScrollAnimationSection>
+              {/* Commitment Section */}
+              <ScrollAnimationSection
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+              >
+                <CommitmentSection />
+              </ScrollAnimationSection>
 
-      {/* Commitment Section */}
-      <ScrollAnimationSection
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.6 }}
-      >
-        <CommitmentSection />
-      </ScrollAnimationSection>
+              {/* What Is On Offer Section */}
+              <ScrollAnimationSection
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+              >
+                <WhatIsOnOffer />
+              </ScrollAnimationSection>
 
-      {/* What Is On Offer Section */}
-      <ScrollAnimationSection
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-      >
-        <WhatIsOnOffer />
-      </ScrollAnimationSection>
+              {/* Why Choose Us Section */}
+              <ScrollAnimationSection
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
+              >
+                <WhyChooseUsSection />
+              </ScrollAnimationSection>
 
-      {/* Why Choose Us Section */}
-      <ScrollAnimationSection
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 1.0 }}
-      >
-        <WhyChooseUsSection />
-      </ScrollAnimationSection>
+              {/* Conditional Rendering of Application or Contact Section */}
+              {showApplicationForm ? <ApplicationSection /> : <ContactSection />}
+            </>
+          } />
+          <Route path="/contact" element={ <ContactSection /> } />
+          {/* Add other routes here */}
 
-      {/* Conditional Rendering of Application or Contact Section */}
-      {showApplicationForm ? <ApplicationSection /> : <ContactSection />}
+           {/* Add the MessagesPage route */}
+          
+          
+        </Routes>
+        {/* <Routes>
+          <Route path="/api/messages" element={ <MessagesPage /> } />
 
-      <Footer />
-    </div>
+        </Routes> */}
+
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
