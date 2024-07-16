@@ -1,12 +1,15 @@
+
 import React from "react";
 import ContactForm from "./ContactForm";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContactSection = () => {
   return (
     <section id="contact" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-[#001f3f] mb-12">
-          Contact Us
+          Show Interest
         </h2>
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
@@ -18,8 +21,13 @@ const ContactSection = () => {
               to us!
             </p>
             <div className="mb-4">
-              <h4 className="font-semibold text-[#001f3f]">Phone</h4>
-              <p className="text-gray-700">123-456-7890</p>
+              <h4 className="font-semibold text-[#001f3f]">Chat with us on WhatsApp</h4>
+              <a href="https://wa.me/1234567890" className="text-gray-700 flex gap-4">
+                {/* <img src="path-to-whatsapp-icon.png" alt="WhatsApp Icon" style="width: 24px; height: 24px;"/> */}
+                <FontAwesomeIcon  icon={faWhatsapp} className="text-green-400 h-6"/>
+                
+                  Send us a message
+              </a>
             </div>
             <div className="mb-4">
               <h4 className="font-semibold text-[#001f3f]">Email</h4>
