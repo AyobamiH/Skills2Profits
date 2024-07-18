@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import CTAButton from "../common/CTAButton";
-
+import { HashLink as Link } from 'react-router-hash-link';
 const HeroSection = ({ onApplyNowClick }) => {
   return (
     <section className="relative h-screen flex items-center justify-center text-center text-[#ffffff]">
@@ -34,11 +34,20 @@ const HeroSection = ({ onApplyNowClick }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          <CTAButton onClick={onApplyNowClick}>
-            Stop Limiting Yourself Now!
+          {/* <Link smooth to='/#showInterest'>
+          <CTAButton  onClick={onApplyNowClick}>
+            Stop Limiting! Start Profiting!
           </CTAButton>
-        
+          </Link> */}
 
+          <Link smooth to="/#contact" >
+            <CTAButton onClick={{onApplyNowClick}}>
+              Start Profiting
+            </CTAButton>
+          </Link>
+
+          
+      
         </motion.div>
       </motion.div>
       <motion.div
