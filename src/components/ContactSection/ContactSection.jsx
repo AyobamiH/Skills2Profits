@@ -17,28 +17,15 @@ const ContactSection = () => {
               Get in Touch
             </h3>
             <p className="text-gray-700 mb-4">
-              Have questions or ready to transform your outdoor space? Reach out
-              to us!
+              Have questions or ready to start profiting? Reach out
+              now!
             </p>
-            <div className="mb-4">
-              <h4 className="font-semibold text-[#001f3f]">Chat with us on WhatsApp</h4>
-              <a href="https://wa.me/1234567890" className="text-gray-700 flex gap-4">
-                {/* <img src="path-to-whatsapp-icon.png" alt="WhatsApp Icon" style="width: 24px; height: 24px;"/> */}
-                <FontAwesomeIcon  icon={faWhatsapp} className="text-green-400 h-6"/>
-                
-                  Send us a message
-              </a>
-            </div>
+            
             <div className="mb-4">
               <h4 className="font-semibold text-[#001f3f]">Email</h4>
               <p className="text-gray-700">info@skills2Profits.com</p>
             </div>
-            <div>
-              <h4 className="font-semibold text-[#001f3f]">Address</h4>
-              <p className="text-gray-700">
-                AZ, USA.
-              </p>
-            </div>
+            
           </div>
           <div className="md:w-1/2">
             <ContactForm />

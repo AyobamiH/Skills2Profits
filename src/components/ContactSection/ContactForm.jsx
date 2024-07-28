@@ -43,28 +43,7 @@ const [isLoading, setIsLoading] = useState(false);
     );
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   if (isFormComplete()) {
-  //     try {
-  //       const response = await axios.post('http://localhost:5174/messages/send', formData);
-  //       console.log('Message sent successfully', response.data);
-  //       setFormData({
-  //         name: "",
-  //         email: "",
-  //         phone: "",
-  //         message: "",
-  //         country: "",
-  //         agreement: false,
-  //       });
-  //     } catch (error) {
-  //       console.error('Error sending message:', error);
-        
-  //     }
-  //   } else {
-  //     alert('Please fill out all fields and agree to the terms');
-  //   }
-  // };
+
   const handleSubmit = async (e) => {
   e.preventDefault();
   if (isFormComplete()) {
@@ -96,6 +75,14 @@ const [isLoading, setIsLoading] = useState(false);
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
+        <div className="bg-blue-100 p-4 rounded-md text-blue-700 mb-12">
+          <p>Hint: You will be required to provide trading journal and analysis for past profitable and losing trades.</p>
+        </div>
+        {confirmationMessage && (
+              <div className={`mt-4 ${confirmationMessage.includes("error") ? "text-red-600" : "text-green-600"}`}>
+                {confirmationMessage}
+              </div>
+        )}
         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
           Name
         </label>
@@ -403,11 +390,8 @@ const [isLoading, setIsLoading] = useState(false);
             >
               {isLoading ? "Sending..." : "Send Message"}
             </SendMessage>
-            {confirmationMessage && (
-        <div className="mt-4 text-green-600">
-          {confirmationMessage}
-        </div>
-      )}
+            
+
 
           </motion.div>
         </motion.div>
