@@ -16,7 +16,7 @@ import Layout from './components/Layouts/Layout'
 import MessagesPage from './components/MessagesPage';
 
 
-function App() {
+const App = () => {
   const [showApplicationForm, setShowApplicationForm] = useState(false);
 
   const handleApplyNowClick = () => {
@@ -106,10 +106,6 @@ function App() {
           
           
         </Routes>
-        {/* <Routes>
-          <Route path="/api/messages" element={ <MessagesPage /> } />
-
-        </Routes> */}
 
         <Footer />
       </div>
