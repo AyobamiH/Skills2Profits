@@ -5,8 +5,10 @@ import SendMessage from "../common/SendMessage";
 import axios from 'axios'
 
 const ApplicationForm = () => {
-const [confirmationMessage, setConfirmationMessage] = useState("");
-const [isLoading, setIsLoading] = useState(false);
+  const [confirmationMessage, setConfirmationMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isMessageSent, setIsMessageSent] = useState(false); // New state for tracking message success
+
  useEffect(() => {
     const element = document.getElementById('showInterest');
     if (element) {
@@ -45,44 +47,56 @@ const [isLoading, setIsLoading] = useState(false);
 
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  if (isFormComplete()) {
-    setIsLoading(true);
-    try {
-      const response = await axios.post('https://skills2profits.onrender.com/api/send', formData);
-      console.log('Message sent successfully', response.data);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-        country: "",
-        agreement: false,
-      });
-      // Show success message to user
-      setConfirmationMessage("Your message has been sent successfully!");
-    } catch (error) {
-      console.error('Error sending message:', error);
-      // Show error message to user
-      setConfirmationMessage("There was an error sending your message. Please try again.");
-    } finally {
-      setIsLoading(false);
+    e.preventDefault();
+    if (isFormComplete()) {
+      setIsLoading(true);
+      try {
+        const response = await axios.post('https://skills2profits.onrender.com/api/send', formData);
+        console.log('Message sent successfully', response.data);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+          country: "",
+          agreement: false,
+        });
+        setConfirmationMessage("Your message has been sent successfully!");
+        setIsMessageSent(true); // Set message sent flag to true
+      } catch (error) {
+        console.error('Error sending message:', error);
+        setConfirmationMessage("There was an error sending your message. Please try again.");
+        setIsMessageSent(false); // Set message sent flag to false
+      } finally {
+        setIsLoading(false);
+      }
+    } else {
+      alert('Please fill out all fields and agree to the terms');
     }
-  } else {
-    alert('Please fill out all fields and agree to the terms');
-  }
-};
+  };
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <div className="bg-blue-100 p-4 rounded-md text-blue-700 mb-12">
-          <p>Hint: You will be required to provide trading journal and analysis for past profitable and losing trades.</p>
+        <div className="bg-green-100 p-4 rounded-md text-green-700 mb-12">
+          <p>Trading journal and analysis required later in the selection process.</p>
         </div>
         {confirmationMessage && (
-              <div className={`mt-4 ${confirmationMessage.includes("error") ? "text-red-600" : "text-green-600"}`}>
+              <div className={`mb-4 ${confirmationMessage.includes("error") ? "text-red-600" : "text-green-600"}`}>
                 {confirmationMessage}
               </div>
         )}
+        {isMessageSent && (  // Conditionally render the Download PDF link
+          <div className="text-right">
+            <a
+              href="https://forms.gle/8zS1WzBjo4wC5iex9"
+              download="Next-Steps.pdf"
+              className="text-sm text-green-600 hover:underline"
+            >
+              Click for Next Steps
+            </a>
+          </div>
+        )}
+        
         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
           Name
         </label>
