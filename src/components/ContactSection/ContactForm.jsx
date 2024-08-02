@@ -89,7 +89,7 @@ const ApplicationForm = () => {
           <div className="text-right">
             <a
               href="https://forms.gle/8zS1WzBjo4wC5iex9"
-              download="Next-Steps.pdf"
+             
               className="text-sm text-green-600 hover:underline"
             >
               Click for Next Steps
