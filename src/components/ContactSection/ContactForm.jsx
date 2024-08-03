@@ -77,7 +77,7 @@ const ApplicationForm = () => {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <div className="bg-green-100 p-4 rounded-md text-green-700 mb-12">
+        <div className="bg-green-100 p-4 rounded-md text-green-700 mb-8">
           <p>Trading journal and analysis required later in the selection process.</p>
         </div>
         {confirmationMessage && (
@@ -86,7 +86,7 @@ const ApplicationForm = () => {
               </div>
         )}
         {isMessageSent && (  // Conditionally render the Download PDF link
-          <div className="text-right">
+          <div className="mb-2">
             <a
               href="https://forms.gle/8zS1WzBjo4wC5iex9"
              
