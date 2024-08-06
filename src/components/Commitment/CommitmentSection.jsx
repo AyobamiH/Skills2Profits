@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const CommitmentSection = () => {
   return (
-    <section className="py-16 bg-beige">
+    <section className="py-16 bg-gray-100">
 
  
       <div className="container mx-auto px-4">
@@ -14,13 +14,13 @@ const CommitmentSection = () => {
           transition={{ duration: 0.8, delay:0.6 }}
         >
           <motion.div
-            className="md:w-1/2 mb-8 md:mb-0 md:pl-8"
+            className="md:w-1/2 mb-8 md:mb-0 md:pl-4"
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl font-bold text-[#001f3f] mb-4">Commitment</h2>
-            <h4 className="text-2xl font-normal text-[#001f3f] mb-4">Transparency, Integrity, and Excellence!</h4>
+            <h4 className="text-2xl font-normal w-fit text-[#f1c40f] bg-[#001f3f] mb-4">Transparency, Integrity, and Excellence!</h4>
             <p className="text-[#001f3f]">
               
                   Our selection process is designed to
