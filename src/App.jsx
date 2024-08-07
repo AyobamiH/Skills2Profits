@@ -11,7 +11,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 import ServicesSection from './components/ServicesSection/ServicesSection';
 import ApplicationSection from './components/ApplicationSection/ApplicationSection';
 import ScrollAnimationSection from './components/ScrollAnimationSection';
-import Globe from './components/Globe'; // Import the Globe component
+
 
 function App() {
   const [showApplicationForm, setShowApplicationForm] = useState(false);
