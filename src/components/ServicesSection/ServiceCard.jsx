@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartLine, faGem , faChartBar, faBolt } from '@fortawesome/free-solid-svg-icons';
 
-import { faOilWell } from "@fortawesome/free-solid-svg-icons/faOilWell";
+
 
 
 const iconMap = {
