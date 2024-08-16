@@ -23,7 +23,7 @@ const WhyChooseUsSection = () => {
     {
       id:'21xq',
       icon: "users",
-      title: "Networking Oppotunities",
+      title: "Networking Opportunities",
       description:
         "Join a network of professional traders and share strategies.",
     },

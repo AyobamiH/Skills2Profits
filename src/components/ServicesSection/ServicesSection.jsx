@@ -9,27 +9,27 @@ const ServicesSection = () => {
   const services = [
     {
       icon: "chart-line",
-      title: "Advanced Analytics",
+      title: "Futures Trading",
       description:
-        "Gain insights with our cutting-edge analytical tools and real-time market data.",
+        "Can you navigate the complexities of a financial contract that obligates you to buy or sell an asset at a future date and price?",
     },
     {
-      icon: "robot",
-      title: "Automated Trading",
+      icon: "gem",
+      title: "Precious Metals",
       description:
-        "Leverage AI-powered algorithms for efficient and strategic trading execution.",
+        "Do you have the insight to hedge against inflation and currency fluctuations by speculating on the future price of gold?",
     },
     {
-      icon: "users",
-      title: "Expert Mentorship",
+      icon: "nasdaq",
+      title: "NASDAQ",
       description:
-        "Learn from industry professionals and refine your trading strategies.",
+        "Are you equipped to analyze and trade based on the performance of technology and growth stocks through Nasdaq futures contracts?",
     },
     {
-      icon: "shield-alt",
-      title: "Risk Management",
+      icon: "energy",
+      title: "Energy",
       description:
-        "Protect your investments with our advanced risk assessment and mitigation tools.",
+        "Can you strategically trade crude oil futures by understanding global supply and demand dynamics?",
     },
   ];
 

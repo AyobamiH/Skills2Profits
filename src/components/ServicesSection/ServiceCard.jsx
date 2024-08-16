@@ -3,19 +3,17 @@
  */
 import React from "react";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChartLine,
-  faRobot,
-  faUsers,
-  faShieldAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChartLine, faGem , faChartBar, faBolt } from '@fortawesome/free-solid-svg-icons';
+
+import { faOilWell } from "@fortawesome/free-solid-svg-icons/faOilWell";
+
 
 const iconMap = {
   "chart-line": faChartLine,
-  robot: faRobot,
-  users: faUsers,
-  "shield-alt": faShieldAlt,
+  "gem": faGem ,
+  "nasdaq": faChartBar,
+  "energy": faBolt,
 };
 
 const ServiceCard = ({ icon, title, description }) => {
