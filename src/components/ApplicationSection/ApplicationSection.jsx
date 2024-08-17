@@ -3,6 +3,8 @@
  */
 import React from "react";
 import ApplicationForm from "./ApplicationForm";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ApplicationSection = () => {
   return (
@@ -21,8 +23,13 @@ const ApplicationSection = () => {
               to us!
             </p>
             <div className="mb-4">
-              <h4 className="font-semibold text-[#001f3f]">Phone</h4>
-              <p className="text-gray-700">123-456-7890</p>
+              <h4 className="font-semibold text-[#001f3f]">Chat with us on WhatsApp</h4>
+              <a href="https://wa.me/1234567890" className="text-gray-700 flex gap-4">
+                {/* <img src="path-to-whatsapp-icon.png" alt="WhatsApp Icon" style="width: 24px; height: 24px;"/> */}
+                <FontAwesomeIcon  icon={faWhatsapp} className="text-green-400 h-6"/>
+                
+                  Send us a message
+              </a>
             </div>
             <div className="mb-4">
               <h4 className="font-semibold text-[#001f3f]">Email</h4>
