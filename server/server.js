@@ -10,7 +10,9 @@ const messagesRoutes = require('./routes/messagesRoutes');
 app.use(express.json());
 
 // Enable CORS so that the frontend (localhost:5174) can communicate with the backend (localhost:4545)
-app.use(cors())
+app.use(cors({
+  origin: 'https://skills2profits.com'
+}))
 // Use the messages routes for the '/messages' path
 app.use('/api', messagesRoutes);
 
