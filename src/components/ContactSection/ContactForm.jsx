@@ -85,8 +85,9 @@ const ApplicationForm = () => {
                 {confirmationMessage}
               </div>
         )}
-        {isMessageSent && (  // Conditionally render the Download PDF link
-          <div className="mb-2">
+        <div className="mx-auto">
+          {isMessageSent && (  // Conditionally render the Download PDF link
+          <div className="mb-2 " >
             <a
               href="https://forms.gle/8zS1WzBjo4wC5iex9"
              
@@ -96,6 +97,7 @@ const ApplicationForm = () => {
             </a>
           </div>
         )}
+        </div>
         
         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
           Name
