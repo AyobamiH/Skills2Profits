@@ -10,7 +10,7 @@ const messagesRoutes = require('./routes/messagesRoutes');
 app.use(express.json());
 
 const corsOptions = {
-  origin: ['http://localhost:5173', 'https://skills2profits.com'],
+  origin: ['http://localhost:5174', 'https://skills2profits.com'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true, // Allow credentials like cookies to be sent
   optionsSuccessStatus: 204
