@@ -58,9 +58,20 @@ const HeroSection = ({ onApplyNowClick }) => {
       >
         <img
           src="/images/fintrade.webp"
+          srcSet="/images/fintrade-small.webp 600w, /images/fintrade-medium.webp 1200w, /images/fintrade-large.webp 1800w"
+          sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, (max-width: 1800px) 1800px"
           alt="Trading floor with financial charts"
           className="object-cover w-full h-full"
         />
+
+        {/* <img
+          src="/images/fintrade-small.webp"
+          srcset="/images/fintrade-small.webp 600w, /images/fintrade-medium.webp 1200w, /images/fintrade-large.webp 1800w"
+          sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
+          alt="Trading floor with financial charts"
+          className="object-cover w-full h-full"
+        /> */}
+
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-r from-[#001f3f] to-[#2c3e50] opacity-90"></div>
     </section>
