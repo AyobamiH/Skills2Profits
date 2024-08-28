@@ -21,9 +21,9 @@ app.get('/', (req, res) => {
 });
 // Verify MongoDB URI
 connectDB();
-
+const HOST= process.env.HOST
 const PORT = process.env.PORT || 4545
 // Server setup
 app.listen(PORT, () => {
-  console.log(`Server is running on ${process.env.PORT}, you better catch it! `);
+  console.log(`Server is running on ${HOST} :  ${process.env.PORT}, you better catch it! `);
 });
