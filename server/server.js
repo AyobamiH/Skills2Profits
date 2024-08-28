@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Enable CORS so that the frontend (localhost:5174) can communicate with the backend (localhost:4545)
 app.use(cors({
-  origin: 'https://skills2profits.com', 
+  origin: ['https://skills2profits.com/api', 'http://localhost:5174'], 
 }))
 // Use the messages routes for the '/messages' path
 app.use('/api', messagesRoutes);

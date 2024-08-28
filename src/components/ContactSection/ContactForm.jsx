@@ -31,6 +31,8 @@ const ApplicationForm = () => {
       ...formData,
       [name]: type === "checkbox" ? checked : value,
     });
+
+    console.log(formData)
   };
 
   const isFormComplete = () => {
@@ -47,12 +49,12 @@ const ApplicationForm = () => {
 
 
   const handleSubmit = async (e) => {
-    console.log(e)
+    console.log(e.target)
+   
     e.preventDefault();
     if (isFormComplete()) {
       setIsLoading(true);
       try {
-        
         const response = await axios.post('/api/send', formData);
         console.log('Message sent successfully', response.data);
         setFormData({
