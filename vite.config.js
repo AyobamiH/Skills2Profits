@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:4545',  // Your backend server
+        target: 'https://skills2profits.onrender.com/api/:path*',  // Your backend server
         changeOrigin: true,
         secure: false,
       },
