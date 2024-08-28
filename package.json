@@ -5,14 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite  ",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "build:frontend": "vite build",
-    "build:backend": "cd server && npm run build", 
-    "start": "node server/server.js",
-    "build": "npm run build:frontend && npm run build:backend"
+    "preview": "vite preview"
   },
-  
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
