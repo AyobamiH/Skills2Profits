@@ -8,8 +8,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "build:frontend": "vite build",
-    "build:backend": "cd backend && npm run build", 
-    "start": "node backend/server.js",
+    "build:backend": "cd server && npm run build", 
+    "start": "node server/server.js",
     "build": "npm run build:frontend && npm run build:backend"
   },
   
