@@ -110,7 +110,7 @@ const App = () => {
           {/* Add other routes here */}
 
            {/* Add the MessagesPage route */}
-          <Route path='/api/messages' element={<MessagesPage/>} />
+          <Route path='/messages' element={<MessagesPage/>} />
           
         </Routes>
 
