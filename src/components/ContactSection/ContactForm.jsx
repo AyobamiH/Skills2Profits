@@ -95,7 +95,7 @@ const ApplicationForm = () => {
             <a
               href="https://forms.gle/8zS1WzBjo4wC5iex9"
              
-              className="text-smbg-green-800 w-fit text-center mx-auto    text-white hover:underline"
+              className="text-sm bg-green-800 w-fit text-center mx-auto    text-white hover:underline"
             >
               Click for Next Steps
             </a>
