@@ -81,8 +81,8 @@ const ApplicationForm = () => {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <div className="bg-green-100 rounded-md text-green-700 mb-8">
-          <p>Trading journal and analysis required later in the selection process.</p>
+        <div className="bg-green-100 p-2 rounded-md text-green-800 mb-8">
+          <p><span>Hint:</span>Trading journal and analysis required later in the selection process.</p>
         </div>
         
         {confirmationMessage && (
