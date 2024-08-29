@@ -47,7 +47,7 @@ const ApplicationForm = () => {
     );
   };
 
-
+  axios.defaults.withCredentials = true;
   const handleSubmit = async (e) => {
     console.log(e.target)
    
