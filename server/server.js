@@ -24,7 +24,7 @@ app.use('/api/send', messagesRoutes);
 
 // Use the messages routes for the '/messages' path
 app.get('/', (req, res) => {
-  res.send('Welcome to the API server!');
+  res.json('Welcome to the API server!');
 });
 
 // Verify MongoDB URI
@@ -34,5 +34,5 @@ connectDB();
 const PORT = process.env.PORT || 4545
 // Server setup
 app.listen(PORT, () => {
-  console.log(`Server is running on ${HOST} :  ${process.env.PORT}, you better catch it! `);
+  console.log(`Server is running on : ${process.env.PORT}, you better catch it! `);
 });
