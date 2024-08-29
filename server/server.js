@@ -7,21 +7,30 @@ const messagesRoutes = require('./routes/messagesRoutes');
 // Middleware to parse JSON
 
 // Middleware to parse JSON
-app.use(express.json());
+
 
 
 // Enable CORS so that the frontend (localhost:5174) can communicate with the backend (localhost:4545)
 app.use(cors({
-  origin: 'https://skills2profits.com/api/send', 
+  origin: ['https://skills2profits.com'], 
+  methods: ['POST', 'GET'],
+  credentials: true
 }))
-// Use the messages routes for the '/messages' path
+
+app.use(express.json());
+
 app.use('/api/send', messagesRoutes);
+
+
+// Use the messages routes for the '/messages' path
 app.get('/', (req, res) => {
   res.send('Welcome to the API server!');
 });
+
 // Verify MongoDB URI
+
 connectDB();
-const HOST= process.env.HOST
+
 const PORT = process.env.PORT || 4545
 // Server setup
 app.listen(PORT, () => {
