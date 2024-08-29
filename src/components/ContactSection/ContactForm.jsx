@@ -81,11 +81,12 @@ const ApplicationForm = () => {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <div className="bg-green-100 p-4 rounded-md text-green-700 mb-8">
+        <div className="bg-green-100 rounded-md text-green-700 mb-8">
           <p>Trading journal and analysis required later in the selection process.</p>
         </div>
+        
         {confirmationMessage && (
-              <div className={`mb-4 ${confirmationMessage.includes("error") ? "text-red-600" : "text-green-600"}`}>
+              <div className={`mb-4  ${confirmationMessage.includes("error") ? "bg-red-100 text-red-600" : "text-green-800 bg-green-100"}`}>
                 {confirmationMessage}
               </div>
         )}
@@ -95,7 +96,7 @@ const ApplicationForm = () => {
             <a
               href="https://forms.gle/8zS1WzBjo4wC5iex9"
              
-              className="text-sm bg-green-800 w-fit text-center mx-auto    text-white hover:underline"
+              className="text-sm bg-green-100 w-fit text-center mx-auto    text-green-800 hover:underline"
             >
               Click for Next Steps
             </a>
