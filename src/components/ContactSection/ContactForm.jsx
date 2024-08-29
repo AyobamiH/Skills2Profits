@@ -91,11 +91,11 @@ const ApplicationForm = () => {
         )}
         <div className="mx-auto">
           {isMessageSent && (  // Conditionally render the Download PDF link
-          <div className="mb-2 " >
+          <div className="mb-2 bg-green-800 " >
             <a
               href="https://forms.gle/8zS1WzBjo4wC5iex9"
              
-              className="text-sm text-green-600 hover:underline"
+              className="text-sm text-white hover:underline"
             >
               Click for Next Steps
             </a>
