@@ -9,7 +9,7 @@ const ContactSection = () => {
     <section id="contact" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-[#001f3f] mb-12">
-           Show Interest by Contacting Us
+           Start Earning as a Trader – Apply Now
         </h2>
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
@@ -17,7 +17,7 @@ const ContactSection = () => {
               Get in Touch
             </h3>
             <p className="text-gray-700 mb-4">
-              Have questions or ready to start profiting? Reach out
+              Have questions or ready to start earning daily? Reach out
               now!
             </p>
             
