@@ -19,12 +19,12 @@ const AboutSection = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl font-bold text-[#001f3f] mb-4">About</h2>
+            <h2 className="text-3xl font-bold text-[#001f3f] mb-4">About Skills2Profits</h2>
             <h4 className="text-2xl font-normal w-fit text-[#f1c40f] bg-[#001f3f] mb-4">Bridging The Gap!</h4>
             <p className="text-[#001f3f] mb-4">
-              The mission is to bridge the gap between talent and opportunity by offering a sponsorship program to foster financial growth and development, ensuring that talented individuals have the chance to thrive in the competitive world of trading. 
-            
-            </p >
+We empower skilled traders in Lagos & Port Harcourt to monetize their expertise with real opportunities. Our platform connects you with financial markets where you can earn daily based on your skills.
+
+If you're a proven trader who knows how to manage risk and execute trades effectively, this is your chance to turn trading into a reliable income source.</p >
           
           </motion.div>
           <motion.div

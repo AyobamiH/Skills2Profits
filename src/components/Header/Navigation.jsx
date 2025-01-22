@@ -36,7 +36,7 @@ const Navigation = ({ isScrolled }) => {
               smooth to={`#${item.toLowerCase()}`}
               className={`transition-colors duration-200 ${
                 isScrolled
-                  ? "text-[#ffffff] hover:text-[#2ecc71]"
+                  ? "text-[#ffffff] hover:text-[#27ff4f]"
                   : "text-[#ffffff] hover:text-[#2ecc71]"
               }`}
             >
