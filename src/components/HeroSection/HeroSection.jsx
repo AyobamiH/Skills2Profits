@@ -22,7 +22,7 @@ const HeroSection = ({ onApplyNowClick }) => {
         </motion.h1>
        
          <motion.p
-      className="text-md mb-8 text-center text-white"
+      className="text-lg  mb-8 text-center text-white"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, duration: 0.8 }}

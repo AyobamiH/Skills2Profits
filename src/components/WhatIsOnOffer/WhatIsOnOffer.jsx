@@ -20,7 +20,7 @@ const WhatIsOnOffer = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl font-bold text-[#001f3f] mb-4">What Is On Offer?</h2>
-            <h4 className="text-2xl font-normal w-fit text-[#f1c40f] bg-[#001f3f]  mb-4">Trade. Consult. Earn. Get Paid Daily for Your Expertise.</h4>
+            <h4 className="text-2xl font-normal w-fit text-[#f1c40f] bg-[#001f3f]  mb-4">No Recruitment Fees. No Gimmicks. Just Real Opportunities.</h4>
             
 
             <ul className="mt-12">
@@ -30,7 +30,7 @@ const WhatIsOnOffer = () => {
               <li>Trade from Anywhere in Lagos or Port Harcourt</li>
             </ul>
 
-            <p className="text-2xl font-normal w-fit text-[#001f3f]  mt-12">No recruitment fees. No gimmicks. Just real opportunities.</p>
+
             
 
 
