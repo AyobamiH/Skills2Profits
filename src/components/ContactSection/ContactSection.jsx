@@ -25,6 +25,11 @@ const ContactSection = () => {
               <h4 className="font-semibold text-[#001f3f]">Email</h4>
               <p className="text-gray-700">info@skills2Profits.com</p>
             </div>
+            <div className="mb-4">
+              <h4 className="font-semibold text-[#001f3f]">Text</h4>
+              <p className="text-gray-700">07020476342</p>
+            
+            </div>
             
           </div>
           <div className="md:w-1/2">
