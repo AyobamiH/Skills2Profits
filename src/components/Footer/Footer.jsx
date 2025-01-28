@@ -83,15 +83,12 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Send Us an Email</h4>
+            <h4 className="text-lg font-semibold mb-4">Reach Out!</h4>
            
             <p className="text-sm">Email: info@skills2profits.com</p>
-          </div>
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Send Us A Text</h4>
-           
             <p className="text-sm">Text: 07020476342</p>
           </div>
+          
         </div>
         <div className="mt-8 pt-8 border-t border-[#34495e] text-center">
           <p className="text-sm">
