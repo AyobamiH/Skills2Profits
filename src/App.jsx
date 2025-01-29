@@ -15,7 +15,7 @@ import Layout from './components/Layouts/Layout'
 // import CTAButton from './components/CTAButton'; // Import your CTAButton
 import MessagesPage from './components/MessagesPage';
 
-
+import logo from '../../tradingmarketone/logo.svg'
 const App = () => {
   const [showApplicationForm, setShowApplicationForm] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
@@ -41,6 +41,7 @@ const App = () => {
   }, [showApplicationForm]);
 
   return (
+    
     <BrowserRouter>
       <div id='home' className="relative overflow-hidden">
         <Header onApplyNowClick={handleApplyNowClick} handleContactClick={handleContactClick} />
