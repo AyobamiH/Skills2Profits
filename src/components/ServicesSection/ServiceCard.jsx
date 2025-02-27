@@ -4,16 +4,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartLine, faGem , faChartBar, faBolt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBullseye,
+  faMoneyBillTrendUp,
+  faChess,
+  faProjectDiagram, 
+  
+    } from '@fortawesome/free-solid-svg-icons';
 
 
 
 
 const iconMap = {
-  "chart-line": faChartLine,
-  "gem": faGem ,
-  "nasdaq": faChartBar,
-  "energy": faBolt,
+  "faProjectDiagram": faProjectDiagram,
+  "faMoneyBillTrendUp": faMoneyBillTrendUp  ,
+  "faBullseye": faBullseye,
+  "faChess": faChess ,
 };
 
 const ServiceCard = ({ icon, title, description }) => {

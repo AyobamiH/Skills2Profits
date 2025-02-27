@@ -53,12 +53,12 @@ const Header = ( {onApplyNowClick,  handleContactClick} ) => {
         </div>
        
           <Link  smooth to='/#contact' className="hidden md:block">
-              <CTAButton onClick={onApplyNowClick}> Start Profiting</CTAButton>
+              <CTAButton onClick={onApplyNowClick}> Start Profiting!</CTAButton>
             </Link>
        
         <button
           className={`md:hidden ${
-            isScrolled ? "text-[#ffffff]" : "text-[#ffffff]"
+            isScrolled ? "text-[#ffffff]" : "hover:text-[#27ff4f]"
           }`}
           onClick={toggleMenu}
           aria-label="Toggle menu"

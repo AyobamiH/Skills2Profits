@@ -19,17 +19,10 @@ const CommitmentSection = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl font-bold text-[#001f3f] mb-4">Commitment</h2>
-            <h4 className="text-2xl font-normal w-fit text-[#f1c40f] bg-[#001f3f] mb-4">Transparency, Integrity, and Excellence!</h4>
-            <p className="text-[#001f3f]">
-              
-                  Our selection process is designed to
-                  identify the most promising traders who
-                  are ready to take their trading to the next
-                  level. We do not charge any application
-                  fees, making this a risk-free opportunity
-                  for you to unlock your potential.
-            </p >
+            <h2 className="text-4xl font-bold text-[#001f3f] mb-4">Commitment to Traders</h2>
+            
+            <h4 className="text-2xl font-normal w-fit text-[#f1c40f] bg-[#001f3f] mb-4">Empowering Skilled Traders to Earn Daily</h4>
+            <p className="text-[#001f3f]">We are committed to providing fair opportunities for traders who want to earn from their skills. Whether you're trading full-time or part-time, our platform gives you control over your earnings.</p>
           </motion.div>
           <motion.div
             className="md:w-1/2"

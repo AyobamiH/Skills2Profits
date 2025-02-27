@@ -6,28 +6,30 @@ import ServiceCard from "./ServiceCard";
 const ServicesSection = () => {
   const services = [
     {
-      icon: "chart-line",
-      title: "Futures Trading",
+      icon: "faChess",
+      title: "Strategy Trading",
       description:
-        "Can you navigate the complexities of a financial contract that obligates you to buy or sell an asset at a future date and price?",
+        "Do you have a winning strategy? Apply it and get paid based on your performance.",
     },
     {
-      icon: "gem",
-      title: "Precious Metals",
+      icon: "faMoneyBillTrendUp",
+      title: "NASDAQ & Forex Opportunities",
       description:
-        "Do you have the insight to hedge against inflation and currency fluctuations by speculating on the future price of gold?",
+        "Get access to high-liquidity markets, including NASDAQ and Forex, to maximize your earning potential.",
     },
     {
-      icon: "nasdaq",
-      title: "NASDAQ",
+      icon: "faBullseye",
+      title: "Precision Market Execution",
       description:
-        "Are you equipped to analyze and trade based on the performance of technology and growth stocks through Nasdaq futures contracts?",
+        "Showcase your expertise in executing trades at the right moment. We provide market conditions that reward precision.",
     },
     {
-      icon: "energy",
-      title: "Energy",
+      icon: "faProjectDiagram",
+      title: "Pattern Trading",
       description:
-        "Can you strategically trade crude oil futures by understanding global supply and demand dynamics?",
+        "Use your pattern trading skills to generate consistent profits. We connect you with profitable opportunities daily.",
+        
+
     },
   ];
 

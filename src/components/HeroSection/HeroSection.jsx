@@ -12,22 +12,22 @@ const HeroSection = ({ onApplyNowClick }) => {
         transition={{ duration: 0.8 }}
       >
         <motion.h1
-          className="text-4xl md:text-5xl font-bold mb-4"
+          className="text-4xl md:text-5xl font-bold mb-8 text-[#27ff4f] "
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          Turn Your Skills To Profits
+          Turn Your Trading Skills into Daily Pay
           {/* Empower Your Trading with Elite Resources */}
         </motion.h1>
        
          <motion.p
-      className="text-lg md:text-xl mb-8 text-center text-[#ffffff]"
+      className="text-lg  mb-8 text-center text-white"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, duration: 0.8 }}
     >
-     Are you a skilled trader limited by funding?
+     Are you a skilled trader in Lagos or Port Harcourt? Join Skills2Profits and get paid daily for your expertise. No sign-up fees—just real opportunities!
     </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ const HeroSection = ({ onApplyNowClick }) => {
 
           <Link smooth to="/#contact" >
             <CTAButton onClick={{onApplyNowClick}}>
-              Start Profiting
+              Start Earning Now!
             </CTAButton>
           </Link>
 

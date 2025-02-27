@@ -20,10 +20,23 @@ const WhatIsOnOffer = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl font-bold text-[#001f3f] mb-4">What Is On Offer?</h2>
-            <h4 className="text-2xl font-normal w-fit text-[#f1c40f] bg-[#001f3f]  mb-4">No Paywalls, Just Opportunities!</h4>
-            <p className="text-[#001f3f] mb-4">
-              We provide the financial backing you need --No more funding worries. Gain access to cutting-edge resources, personalized mentorship, and a community of fellow traders.
-            </p >
+            <h4 className="text-2xl font-normal w-fit text-[#f1c40f] bg-[#001f3f]  mb-4">No Recruitment Fees. No Gimmicks. Just Real Opportunities.</h4>
+            
+
+            <ul className="mt-12">
+              <li className="text-[#001f3f] mb-2">Daily Payouts</li> 
+              <li className="text-[#001f3f] mb-2">Performance-Based Earnings</li>
+              <li className="text-[#001f3f] mb-2">Access to High-Liquidity Markets</li>
+              <li>Trade from Anywhere in Lagos or Port Harcourt</li>
+            </ul>
+
+
+            
+
+
+
+
+
           </motion.div>
           <motion.div
             className="md:w-1/2"
@@ -33,7 +46,7 @@ const WhatIsOnOffer = () => {
           >
             <img
               src="/images/fintradetwo.webp"
-              alt="Our team at work"
+              alt="financial trading imagery"
               className="rounded-lg shadow-md"
             />
           </motion.div>
