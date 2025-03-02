@@ -14,7 +14,7 @@ import ScrollAnimationSection from './components/ScrollAnimationSection';
 import Layout from './components/Layouts/Layout'
 // import CTAButton from './components/CTAButton'; // Import your CTAButton
 import MessagesPage from './components/MessagesPage';
-
+import FAQSection from "./components/faq/FAQSection"
 
 const App = () => {
   const [showApplicationForm, setShowApplicationForm] = useState(false);
@@ -101,6 +101,16 @@ const App = () => {
                 transition={{ duration: 0.8, delay: 1.0 }}
               >
                 <WhyChooseUsSection />
+              </ScrollAnimationSection>
+
+
+              {/* FAQ Section */}
+              <ScrollAnimationSection
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
+              >
+                <FAQSection/>
               </ScrollAnimationSection>
 
               {/* Conditional Rendering of Application or Contact Section */}
