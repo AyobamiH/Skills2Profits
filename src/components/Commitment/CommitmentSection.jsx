@@ -26,7 +26,7 @@ const CommitmentSection = () => {
           </motion.div>
           <motion.div
             className="md:w-1/2"
-            initial={{ x: 50, opacity: 0 }}
+            initial={{ x: 50, opacity: 0 }} 
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
