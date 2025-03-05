@@ -51,6 +51,8 @@ const messageSchema = new mongoose.Schema({
     phone: String,
     message: String,
     country: String,
+    expertise: String,
+    country: String,
     agreement: Boolean,
 }, { timestamps: true });
 
@@ -61,7 +63,7 @@ const Message = mongoose.model('Message', messageSchema);
 
 const sendMessage = async (req, res) => {
     try {
-        const { name, email, phone, message, agreement } = req.body;
+        const { name, email, phone, message, country, expertise, agreement } = req.body;
 
         const newMessage = new Message({ name, email, phone, message, agreement });
         await newMessage.save();
