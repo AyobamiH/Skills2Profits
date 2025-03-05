@@ -10,10 +10,8 @@ import FAQNavigation from "../faq/FAQNavigation";
 const categories = [
   "Getting Started",
   "Payment and Earnings",
-  "Trading Services",
   "Costs and Investments",
   "Trading Markets",
-  "Teaching and Mentorship",
   "Skill Development",
   "Platform Features",
   "Improving Trading Skills",
