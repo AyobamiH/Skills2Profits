@@ -15,19 +15,19 @@ const ServicesSection = () => {
       icon: "faMoneyBillTrendUp",
       title: "Financial Market",
       description:
-        "Get access to high-liquidity markets, including NASDAQ and Forex, to maximize your earning potential.",
+        "Get paid for your expertise in Forex, Stocks, Commodities, Indices, and Crypto.",
     },
     {
       icon: "faBullseye",
       title: "Precision Market Execution",
       description:
-        "Showcase your expertise in executing trades at the right moment. We provide market conditions that reward precision.",
+        "Showcase your expertise in executing trades at the right moment.",
     },
     {
       icon: "faProjectDiagram",
       title: "Pattern Trading",
       description:
-        "Use your pattern trading skills to generate consistent profits. We connect you with profitable opportunities daily.",
+        "Use your pattern trading skills to generate consistent profits.",
         
 
     },
