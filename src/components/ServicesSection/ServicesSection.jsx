@@ -13,7 +13,7 @@ const ServicesSection = () => {
     },
     {
       icon: "faMoneyBillTrendUp",
-      title: "NASDAQ & Forex Opportunities",
+      title: "Financial Market",
       description:
         "Get access to high-liquidity markets, including NASDAQ and Forex, to maximize your earning potential.",
     },
