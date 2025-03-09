@@ -358,6 +358,16 @@ const offerListSchema = {
     <script type="application/ld+json">
       {JSON.stringify(websiteSchema)}
     </script>
+    
+     <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-N4QXPMF761');
+        `}
+      </script>
 
 </Helmet> 
     <BrowserRouter>
