@@ -24,21 +24,16 @@ const faqData = {
   "Getting Started": [
     {
       question: "How can I start earning daily as a trader?",
-      answer: "Getting started is simple! Sign up, complete your profile, and showcase your trading expertise. Once approved, you can start trading and receiving daily payouts."
+      answer: "Getting started is simple! Sign up and wait for request to showcase your trading expertise. Once approved, you can start trading your skills for profits and receive daily/weekly payouts."
     }
   ],
   "Payment and Earnings": [
     {
       question: "How does payment work?",
-      answer: "✅ Daily payouts based on your trading results.\n✅ Secure payment channels (local bank transfers available in Lagos & Port Harcourt).\n✅ No sign-up fees or hidden charges – you earn based on your trading skills!"
+      answer: "✅ Daily/Weekly payouts based on your trading results.\n✅ Secure payment channels (local bank transfers available in Lagos & Port Harcourt).\n✅ No sign-up fees or hidden charges – you earn based on your trading skills!"
     }
   ],
-  "Trading Services": [
-    {
-      question: "What trading services can I offer?",
-      answer: "You can monetize your skills by providing:\n✔️ Live trade signals\n✔️ Technical analysis & market predictions\n✔️ One-on-one trading consultations\n✔️ Mentorship & training for beginner traders"
-    }
-  ],
+  
   "Costs and Investments": [
     {
       question: "How much money do I need to start?",
@@ -51,12 +46,7 @@ const faqData = {
       answer: "It depends on your expertise! Our traders specialize in:\n📈 Forex (USD, GBP, EUR pairs, etc.)\n📉 Stock & Index Trading (NASDAQ, S&P 500, etc.)\n💰 Crypto Trading (Bitcoin, Ethereum, etc.)\n⚡ Liquidity Trading (High-frequency, quick profit trades)"
     }
   ],
-  "Teaching and Mentorship": [
-    {
-      question: "Can I teach others how to trade on this platform?",
-      answer: "Yes! You can:\n🎓 Offer mentorship programs\n📊 Train beginner traders\n💡 Get paid for coaching & strategy building"
-    }
-  ],
+  
   "Skill Development": [
     {
       question: "How do I become a highly skilled trader?",
@@ -112,7 +102,7 @@ const FAQSection = () => {
   const faqsToDisplay = searchResults || faqData[selectedCategory];
 
   return (
-    <section className="bg-white py-12">
+    <section className="bg-beige py-12">
 
       <div className="container mx-auto px-4 max-w-4xl py-12 bg-[#f0f8ff] lg:bg-white sm:bg-[#f0f8ff]">
         <header className="text-center mb-8">
@@ -120,7 +110,7 @@ const FAQSection = () => {
           Frequently Asked Questions
         </h2>
         <p className="text-lg text-gray-600">
-        Find answers to common questions about financial trading and earning daily in Lagos and PortharCourt Nigeria.
+        Find answers to common questions about financial trading and earning daily in Lagos and Port Harcourt Nigeria.
       </p>
       </header>
       

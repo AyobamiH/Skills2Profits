@@ -22,12 +22,20 @@ const HeroSection = ({ onApplyNowClick }) => {
         </motion.h1>
        
          <motion.p
-      className="text-lg  mb-8 text-center text-white"
+      className="text-lg  mb-2 text-center text-white"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, duration: 0.8 }}
     >
-     Are you a skilled trader in Lagos or Port Harcourt? Join Skills2Profits and get paid daily for your expertise. No sign-up fees—just real opportunities!
+     Are you a skilled trader in Lagos or Port Harcourt? 
+    </motion.p>
+    <motion.p
+      className="text-lg mb-4 text-center text-white"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.4, duration: 0.8 }}
+    >
+     Join Skills2Profits and get paid daily for your expertise.
     </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
