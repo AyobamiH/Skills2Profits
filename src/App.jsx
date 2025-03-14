@@ -155,20 +155,13 @@ const contactDataSchema = {
     "logo": "https://www.skills2profits.com/images/logo.svg",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+234-812-345-6789",
+      "telephone": "+234-07020476342",
       "contactType": "customer support",
-      "email": "support@skills2profits.com",
+      "email": " info@skills2profits.com",
       "areaServed": "Nigeria",
       "availableLanguage": "English"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Trading Street",
-      "addressLocality": "Lagos",
-      "addressRegion": "Lagos",
-      "postalCode": "100001",
-      "addressCountry": "Nigeria"
     }
+   
   }
 
 
